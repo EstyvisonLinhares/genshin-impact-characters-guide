@@ -38,6 +38,12 @@ li img {
 }
 
 .element-type {
-    background-color: #1779BA;
+    background-color: rgba(23, 121, 186, 0.7);
+}
+
+.element-type h2 {
+    font-family: 'Lato', sans-serif;
+    color: #FFAE00;
+    font-weight: bold;
 }
 
