@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #CADDEA;
+}
+
+header, section {
+    max-width: 1080px;
+    text-align: center;
+    margin: 40px auto 32px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #1779BA;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li div{
+ background-color: #CACACA;
+ margin-top: 32px;
+}
+
+li img {
+    height: 400px;
+    width: 300px;
+}
+
+.element-type {
+    background-color: #1779BA;
+}
+
