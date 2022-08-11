@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #CADDEA;
+    max-width: 1080px;
+    margin: 40px auto 32px;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.character-image img {
+    max-height: 400px;
+}
+
+.character-biografy {
+    position: relative;
+    border: 3px solid blue;
+    text-align: justify;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.character-biografy table, th, td {
+    margin: 0;
+    width: 50%;
+    border: 3px solid ;
+    justify-self: flex-start;
+}
