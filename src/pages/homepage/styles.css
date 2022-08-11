@@ -6,18 +6,20 @@
 }
 
 body {
-    background-color: #CADDEA;
+    background-image: url(https://preview.redd.it/4ai8wekag7i61.jpg?auto=webp&s=5e1a4943e22f306221211c6903ea2d42f0590ac1);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header, section {
     max-width: 1080px;
     text-align: center;
-    margin: 40px auto 32px;
+    margin: 32px auto 32px;
 }
 
 header h1 {
     font-family: 'Roboto', sans-serif;
-    color: #1779BA;
+    color: #FFAE00;
     font-weight: bold;
 }
 
@@ -38,12 +40,13 @@ li img {
 }
 
 .element-type {
-    background-color: rgba(23, 121, 186, 0.7);
+    background-color: rgba(255, 174, 0, 0.8);
+    border-radius: 4px;
 }
 
 .element-type h2 {
-    font-family: 'Lato', sans-serif;
-    color: #FFAE00;
+    font-family: 'Playfair Display', sans-serif;
+    color: #1779BA;
     font-weight: bold;
 }
 
