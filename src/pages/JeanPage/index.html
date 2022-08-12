@@ -1,45 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Jean Page</title>
 </head>
 <body>
-    <h1>Jean</h1>
     <div class="page-wrapper">
-        <section class="character-image">
-            <img 
-            src="https://i.pinimg.com/564x/a6/82/21/a6822188cadb40ae79979f0f2ea2dd64.jpg"
-            alt="Jean Card"
-            >
-        </section>
-        <section class="character-biografy">
-            <div>
-                <p>Jean Gunnhildr is a playable Anemo character in Genshin Impact.</p>
-                <p>
-                    The daugher of Frederica Gunnhildr and Seamus Pegg, the older sister of Barbara,
-                    and a descendant of the prestigious Gunnhildr Clan, Jean is Acting Grand Master of
-                    the Knights of Favonius. She is always busy handling unrest across Mondstadt and 
-                    tirelessly working to maintain the City of Freedon.
-                </p>
-            </div>   
-            <table>
-                <thead>
+        <h1>Jean Gunnhildr</h1>
+        <div class="character-info">
+            <section class="character-image">
+                <img 
+                src="https://i.pinimg.com/564x/a6/82/21/a6822188cadb40ae79979f0f2ea2dd64.jpg"
+                alt="Jean Card"
+                >
+            </section>
+            <section class="character-biografy">
+                <div>
+                    <p>Jean Gunnhildr is a playable Anemo character in Genshin Impact.</p>
+                    <p>
+                        The daugher of Frederica Gunnhildr and Seamus Pegg, the older sister of Barbara,
+                        and a descendant of the prestigious Gunnhildr Clan, Jean is Acting Grand Master of
+                        the Knights of Favonius. She is always busy handling unrest across Mondstadt and 
+                        tirelessly working to maintain the City of Freedon.
+                    </p>
+                </div>
+                <div>
+                    
+                </div>   
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rarity</th>
+                            <th>Weapon</th>
+                            <th>Vision</th>
+                            <th>Region</th>
+                            <th>Bithday</th>
+                            <th>Model Type</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <td>5-stars</td>
+                        <td>Sword</td>
+                        <td>Anemo</td>
+                        <td>Mondstadt</td>
+                        <td>March 14th</td>
+                        <td>Tall female</td>
+    
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="talents-info">
+            <h2>Talents</h2>
+            <table class="talents-table">
+                <colgroup> 
+                    <col class="col-md-1">
+                    <col class="col-md-4">
+                    <col class="col-md-4">
+                </colgroup>
+
+                <thead> 
                     <tr>
-                        <th>Rarity</th>
-                        <th>Weapon</th>
-                        <th>Vision</th>
+                        <th>Icon</th>
+                        <th>Name</th>
+                        <th>Type</th>
                     </tr>
                 </thead>
-                <tbody> 
-                    <td>5-stars</td>
-                    <td>Sword</td>
-                    <td>Anemo</td>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://static.wikia.nocookie.net/gensin-impact/images/0/04/Sword_Anemo.png/revision/latest/scale-to-width-down/45?cb=20210607090054" alt="">
+                        </td>
+                        <td>Favonius Bladework</td>
+                        <td>Normal Attack</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="normal-attack-description">
+                            <strong>Normal Attack</strong>
+                            <p>
+                                Performs up to 5 consecutives strickes
+                            </p>
+                            <strong>Charged Attack</strong>
+                            <p>
+                                Consumes a certain amount of stamina to launch an opponent using the power of wind.
+                                Launched opponents will slowly fall to the ground.
+                            </p>
+                            <strong>Plunging Attack</strong>
+                            <p>
+                                Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.
+                            </p>
+
+                        </td>
+                    </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
     </div>
 </body>
 </html>

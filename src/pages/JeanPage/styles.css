@@ -1,38 +1,108 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 body {
-    background-color: #CADDEA;
-    max-width: 1080px;
-    margin: 40px auto 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://preview.redd.it/4ai8wekag7i61.jpg?auto=webp&s=5e1a4943e22f306221211c6903ea2d42f0590ac1);
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: #9f0a28;
+    font-family: 'Roboto', sans-serif;
 }
 
 .page-wrapper {
+    max-width: 1080px;
+    background-color: #98d9b6;
+    box-shadow: 0 0 0.3em;
+    z-index: 1;
+
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0 16px;
 }
 
-.character-image img {
+.character-info {
+    display: flex;
+}
+
+.character-info .character-image img {
     max-height: 400px;
 }
 
-.character-biografy {
-    position: relative;
-    border: 3px solid blue;
+.character-info .character-biografy {
     text-align: justify;
     margin-left: 24px;
+    line-height: 1.775rem;
+
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #9f0a28;
+    font-weight: 700;
+
+    padding: 8px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .character-biografy table, th, td {
+    border: 3px solid;
+    border-collapse: collapse;
+}
+
+.character-biografy table {
+    margin: auto 0;
+    table-layout: auto;
+}
+
+.character-biografy th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.talents-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.talents-info h2 {
+    margin-top: 16px;
+    color: #9f0a28;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+}
+
+.talents-info .talents-table {
     margin: 0;
-    width: 50%;
-    border: 3px solid ;
-    justify-self: flex-start;
+    border-collapse: collapse;
+    color: #9f0a28;
+    font-size: 20px;
+}
+
+/* .talents-info .talents-table .col-md-2 {
+    width: 10%;
+}
+
+.talents-info .talents-table .col-md-4 {
+    width: 45%;
+} */
+
+.talents-info 
+.talents-table tbody tr 
+.normal-attack-description  {
+    padding: 0;
+    text-align: justify;
+    padding: 16px;
+    line-height: 1.125rem;
 }
