@@ -8,8 +8,8 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url(https://preview.redd.it/4ai8wekag7i61.jpg?auto=webp&s=5e1a4943e22f306221211c6903ea2d42f0590ac1);
-    width: 100vw;
-    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -88,6 +88,8 @@ h1 {
     border-collapse: collapse;
     color: #9f0a28;
     font-size: 20px;
+    table-layout: fixed;
+    width: 100%;
 }
 
 /* .talents-info .talents-table .col-md-2 {
@@ -100,9 +102,105 @@ h1 {
 
 .talents-info 
 .talents-table tbody tr 
-.normal-attack-description  {
+.normal-attack-description, 
+.talents-info 
+.talents-table tbody tr 
+.elemental-skill-description,
+.talents-info
+.talents-table tbody tr
+.elemental-burst-description,
+.talents-info
+.talents-table tbody tr
+.first-ascention-passive-description,
+.talents-info
+.talents-table tbody tr
+.fourth-ascention-passive-description,
+.talents-info
+.talents-table tbody tr
+.utility-passive-description {
     padding: 0;
     text-align: justify;
     padding: 16px;
     line-height: 1.125rem;
+}
+
+.normal-attack-numbers-table,
+.elemental-skill-numbers-table,
+.elemental-burst-numbers-table {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.normal-attack-numbers-table thead tr th, 
+.normal-attack-numbers-table tbody tr td,
+.elemental-skill-numbers-table thead tr th,
+.elemental-skill-numbers-table tbody tr td,
+.elemental-burst-numbers-table thead tr th,
+.elemental-burst-numbers-table tbody tr td 
+{
+    padding: 8px;
+}
+
+.talents-info 
+.talents-table tbody tr 
+.elemental-skill-description ul,
+.talents-info
+.talents-table tbody tr
+.elemental-burst-description ul, 
+.talents-info
+.talents-table tbody tr
+.first-ascention-passive-description ul,
+.talents-info
+.talents-table tbody tr
+.fourth-ascention-passive-description ul,
+.talents-info
+.talents-table tbody tr
+.utility-passive-description ul {
+    margin-left: 36px;
+    margin-bottom: 16px;
+    line-height: 1.225rem;
+}
+
+.talents-info 
+.talents-table tbody tr 
+.elemental-skill-description ul li,
+.talents-info
+.talents-table tbody tr
+.elemental-burst-description ul li,
+.talents-info
+.talents-table tbody tr
+.first-ascention-passive-description ul li,
+.talents-info
+.talents-table tbody tr
+.fourth-ascention-passive-description ul li,
+.talents-info
+.talents-table tbody tr
+.utility-passive-description ul li {
+    margin-bottom: 8px;
+}
+
+.talents-info
+.talents-table tbody tr
+.elemental-burst-description ul li ul{
+    margin-left: 72px;
+    margin-bottom: 16px;
+    line-height: 1.225rem;
+    list-style: square;
+}
+
+.talents-info
+.talents-table tbody tr
+.elemental-burst-description ul li ul li{
+    margin-bottom: 8px;
+}
+
+.talents-info
+.talents-table tbody tr
+.elemental-burst-description
+.container {
+    overflow: auto;
 }
