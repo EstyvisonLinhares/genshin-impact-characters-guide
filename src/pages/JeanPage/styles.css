@@ -12,26 +12,36 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
-    color: #9f0a28;
-    font-family: 'Roboto', sans-serif;
-}
-
 .page-wrapper {
     max-width: 1080px;
     background-color: #98d9b6;
     box-shadow: 0 0 0.3em;
     z-index: 1;
-
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    
     padding: 0 16px;
+}
+
+h1 {
+    color: #9f0a28;
+    font-family: 'Roboto', sans-serif;
+    margin: 16px 0 8px;
+    width: 100%;
 }
 
 .character-info {
     display: flex;
+    margin: 8px 0;
+}
+
+.character-info .character-image h2 {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    color: #9f0a28;
+    margin: 0 0 16px;
 }
 
 .character-info .character-image img {
@@ -41,26 +51,31 @@ h1 {
 .character-info .character-biografy {
     text-align: justify;
     margin-left: 24px;
-    line-height: 1.775rem;
-
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    color: #9f0a28;
-    font-weight: 700;
-
-    padding: 8px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.character-biografy table, th, td {
-    border: 3px solid;
-    border-collapse: collapse;
+.character-info .character-biografy h2 {
+    color:#9f0a28;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
-.character-biografy table {
+.character-info .character-biografy .character-biografy-description {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #9f0a28;
+}
+
+.character-info .character-biografy table, th, td {
+    border: 3px solid;
+    border-collapse: collapse;
+    color: #9f0a28;
+    padding: 8px;
+}
+
+.character-info .character-biografy table {
     margin: auto 0;
     table-layout: auto;
 }
@@ -83,6 +98,9 @@ h1 {
     margin-bottom: 16px;
 }
 
+.talents-info .talents-table-container {
+    overflow-x: auto;
+}
 .talents-info .talents-table {
     margin: 0;
     border-collapse: collapse;
@@ -91,14 +109,6 @@ h1 {
     table-layout: fixed;
     width: 100%;
 }
-
-/* .talents-info .talents-table .col-md-2 {
-    width: 10%;
-}
-
-.talents-info .talents-table .col-md-4 {
-    width: 45%;
-} */
 
 .talents-info 
 .talents-table tbody tr 
